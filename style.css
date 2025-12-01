@@ -206,7 +206,7 @@ p{
     gap: 0.5em;
     white-space: nowrap;
 }
-
+/* This will apply properties to .social-link-item and .social-icon */
 .social-link-item .social-icon {
     width: 1.5rem;
     height: 1.5rem;
@@ -214,31 +214,36 @@ p{
     transition: transform 0.2s;
 }
 
+/* Our social-link-item animaton and .social-icon animaton too. */
 .social-link-item a:hover .social-icon {
     transform: scale(1.1);
 }
-
+/* Social link item animaton whenever you hover over it */
 .social-link-item a:hover span {
     text-decoration: underline;
     color: #007bff;
 }
 
+/* This will apply property margin = 0 to this and also padding = 0 */
 body, h1, h2, h3, p, ul, ol {
     margin: 0;
     padding: 0;
 }
 
+/* Our logo-items which is all of our logos */
 .logo-item img:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
+} 
 
+/* Our end container containing all of our images inside the container */
 .the-end-container img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
+/* Our end icons inside our text-container */
 .the-end-icons-text-container {
     width: 100%;
     display: flex;
@@ -246,7 +251,14 @@ body, h1, h2, h3, p, ul, ol {
     align-items: center;
 }
 
+/* Our social link items */
 .social-link-item a {
     width: 100%;
     justify-content: flex-end;
+}
+
+.cat-image {
+  width:min(685px, 100%); /* Fallback */
+  width:calc-size(stretch, min(685px, size));
+  display:block;
 }
